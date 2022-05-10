@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    api "io.netty:netty-buffer:4.1.71.Final"
+    api "io.netty:netty-codec:4.1.71.Final"
+    api "io.netty:netty-codec-http:4.1.71.Final"
+    api "io.netty:netty-handler:4.1.71.Final"
+    api "io.netty:netty-handler-proxy:4.1.71.Final"
+    api "org.bouncycastle:bcpkix-jdk15on:1.60"
+//    runtime group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.12'
+}

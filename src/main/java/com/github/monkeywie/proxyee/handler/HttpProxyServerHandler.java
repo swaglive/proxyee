@@ -179,7 +179,7 @@ public class HttpProxyServerHandler extends ChannelInboundHandlerAdapter {
                 return;
             }
             if (byteBuf.readableBytes() < 8) {
-                return;
+//                return;
             }
             // 如果connect后面跑的是HTTP报文，也可以抓包处理
             if (isHttp(byteBuf)) {
